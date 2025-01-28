@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Art Fusion Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+</head>
+<body>
+    <div class="gallery-frame">
+        <h1>🎨 Art Fusion Generator</h1>
+        <div class="controls">
+            <button onclick="randomizeArt()">🔄 Random Fusion</button>
+            <button onclick="download()">💾 Download Masterpiece</button>
+            <select id="styleFilter">
+                <option>Renaissance</option>
+                <option>Surrealism</option>
+                <option>Impressionism</option>
+                <option>Cubism</option>
+            </select>
+        </div>
+        
+        <div class="studio">
+            <canvas id="artCanvas"></canvas>
+            <div class="elements-palette" id="elementsPalette"></div>
+        </div>
+        
+        <div class="museum-label">
+            <p id="artProvenance">Drag elements from right palette onto canvas</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
