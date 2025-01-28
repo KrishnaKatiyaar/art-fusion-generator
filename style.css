@@ -1,0 +1,79 @@
+body {
+    background: url('https://img.freepik.com/free-photo/old-brown-paper-texture-background_1373-431.jpg');
+    font-family: 'Libre Baskerville', serif;
+    color: #3e2723;
+}
+
+.gallery-frame {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fffbe6;
+    border: 15px solid #5d4037;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #4e342e;
+    text-align: center;
+    border-bottom: 2px solid #6d4c41;
+    padding-bottom: 1rem;
+}
+
+.studio {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+#artCanvas {
+    border: 5px groove #8d6e63;
+    background: #d7ccc8;
+    flex: 3;
+}
+
+.elements-palette {
+    flex: 1;
+    background: #efebe9;
+    padding: 1rem;
+    border: 3px solid #6d4c41;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.elements-palette img {
+    cursor: move;
+    border: 2px solid #a1887f;
+    max-width: 100%;
+    filter: sepia(0.3);
+    transition: transform 0.3s;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+button, select {
+    background: #8d6e63;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #6d4c41;
+}
+
+.museum-label {
+    background: #fff3e0;
+    padding: 1rem;
+    border-left: 5px solid #6d4c41;
+}
